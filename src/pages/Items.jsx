@@ -16,17 +16,17 @@ export default function Items() {
   return (
     <div className="flex justify-center mt-10 px-4">
       <div className="w-full max-w-4xl bg-white shadow-lg rounded-lg p-6">
-        {/* Title */}
+      
         <h2 className="text-2xl font-semibold text-center mb-6">My Items</h2>
 
-        {/* Grid of items */}
+      
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
           {products.map((item) => (
             <div
               key={item.id}
               className="bg-gray-50 p-4 w-64 rounded-lg shadow-md hover:shadow-lg transition"
             >
-              {/* Placeholder image */}
+          
               <div className="h-40 w-full flex items-center justify-center bg-gray-200 mb-3 rounded-md">
                 <span className="text-gray-400 text-sm">No Image</span>
               </div>

@@ -41,13 +41,13 @@ export default function Home() {
   return (
     <div className="flex justify-center mt-8 px-4">
       <div className="w-full max-w-lg bg-white shadow-lg rounded-lg p-6">
-        {/* Title */}
+       
         <h2 className="text-2xl font-semibold text-center mb-6">My Task Manager</h2>
 
-        {/* Task Form */}
+     
         <TaskForm onAdd={addTask} />
 
-        {/* Filter Buttons */}
+    
         <div className="flex justify-center gap-3 my-4">
           {["all", "completed", "pending"].map((f) => (
             <button
@@ -62,7 +62,7 @@ export default function Home() {
           ))}
         </div>
 
-        {/* Task List */}
+     
         <TaskList
           tasks={filteredTasks}
           onToggle={toggleTask}
